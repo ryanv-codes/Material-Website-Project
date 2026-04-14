@@ -1,3 +1,4 @@
+// npm copy button
 const copyBtn = document.getElementById("copyBtn");
 const npmText = document.getElementById("npmText");
 const copyIcon = document.getElementById("copyIcon");
@@ -12,3 +13,28 @@ copyBtn.addEventListener("click", () => {
                           <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>`;
   }, 2000);
 });
+
+// FAQ Section
+const questions = document.querySelectorAll(".question");
+
+questions.forEach(function(question) {
+  question.addEventListener("click", function() {
+    const answer = question.nextElementSibling;
+    const isOpen = answer.classList.contains("open");
+
+    // Close all
+    document.querySelectorAll(".answer").forEach(function(ans) {
+      ans.classList.remove("open");
+    });
+    document.querySelectorAll(".question").forEach(function(q) {
+      q.classList.remove("open");
+    });
+
+    // Open clicked one if it was closed
+    if (!isOpen) {
+      answer.classList.add("open");
+      question.classList.add("open");
+    }
+  });
+});
+ 
