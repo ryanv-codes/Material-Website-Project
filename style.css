@@ -7,6 +7,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: 14px;
     scroll-behavior: smooth;
@@ -258,7 +262,7 @@ body {
     font-weight: 600;
     height: 144px;
     width: 672px;
-    font-size: 64px;
+    font-size: 60px;
     text-align: center;
     margin-top: 20px;
     background: linear-gradient(to right, #000, #748298);
@@ -549,7 +553,8 @@ body {
 /* Recent Work Hover Effect */
 .recentWork-imgs .work:hover {
     transform: translateY(-5px);
-    transition-duration: 0.3s;  /* New */
+    transition-duration: 0.3s;
+    /* New */
 }
 
 /* OUR TESTIMONIALS Section */
@@ -614,11 +619,14 @@ body {
 .written-review {
     color: #6a7282;
     margin-bottom: 16px;
-    line-height: 1.5; 
+    line-height: 1.5;
     overflow: hidden;
-    display: -webkit-box;  /* New */
-    -webkit-line-clamp: 3;  /* New */
-    -webkit-box-orient: vertical;  /* New */
+    display: -webkit-box;
+    /* New */
+    -webkit-line-clamp: 3;
+    /* New */
+    -webkit-box-orient: vertical;
+    /* New */
 }
 
 /* User Profile */
@@ -647,4 +655,282 @@ body {
 .user-position {
     color: #6a7282;
     font-size: 12px;
+}
+
+/* FAQ SECTION */
+.faq-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+/* FAQ Headings */
+.faq-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.faq-head {
+    color: #101828;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.faq-subhead {
+    color: #6a7282;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* FAQ Questions */
+.faq-Qs {
+    margin-top: 36px;
+    width: 100%;
+    max-width: 760px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    cursor: pointer;
+    border-top: 1px solid #e5e7eb;
+}
+
+.Q-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #101828;
+}
+
+.answer {
+    display: none;
+    color: #6a7282;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.answer.open {
+    display: block;
+}
+
+/* Icons */
+.minus-icon {
+    display: none;
+}
+
+.question.open .plus-icon {
+    display: none;
+}
+
+.question.open .minus-icon {
+    display: block;
+}
+
+.Q1 {
+    border: none;
+}
+
+/* Join Newsletter CTA */
+.newsletter-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+/* Newsletter Headings */
+.newsletter-headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter-head {
+    color: #101828;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.newsletter-subhead {
+    color: #6a7282;
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* Enter Email CTA Button */
+.email-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    border: 2px solid #fff;
+    /* #e2e8f0 */
+    border-radius: 25px;
+    background: #f1f5f9;
+    box-shadow: 0 0 0 2px #e2e8f0;
+    padding: 4px;
+}
+
+.email-cta input {
+    height: 45px;
+    width: 425px;
+    padding-left: 20px;
+    border-radius: 25px;
+    flex: 1;
+    outline: none;
+    border: none;
+    background: #f1f5f9;
+}
+
+.email-cta input::placeholder {
+    color: #6a7282;
+}
+
+/* CTA Button */
+.email-cta button {
+    height: 45px;
+    width: 140px;
+    padding: 12px 28px;
+    color: #fff;
+    background: linear-gradient(to right, #4f39f6, #8a7dff);
+    outline-width: none;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.email-cta button:hover {
+    opacity: .90;
+}
+
+.email-cta button:active {
+    transform: scale(0.95);
+}
+
+/* FOOTER SECTION */
+.footer-section {
+    margin-top: 128px;
+    padding: 0 96px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+.footer-head {
+    color: #1e2939;
+    font-weight: 600;
+}
+
+.links a {
+    text-decoration: none;
+    color: #6a7282;
+}
+
+.links ul {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.links ul a:hover {
+    color: #4f39f6;
+    transition: 0.3s;
+}
+
+/* SIGN UP FOR NEWSLETTER */
+.newsletter-signup {
+    margin-left: 120px;
+}
+
+.newsletter-title {
+    color: #1e2939;
+    font-weight: 600;
+}
+
+.newsletter-desc {
+    color: #6a7282;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.newsletter-signup input {
+    height: 36px;
+    width: 225px;
+    border: 1px solid #d1d5dc;
+    padding: 0 12px;
+}
+
+.newsletter-signup button {
+    height: 36px;
+    width: 95px;
+    padding: 0 24px;
+    background: linear-gradient(to right, #4f39f6, #8a7dff);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* COPYRIGHTS AND SOCIALS SECTION */
+.socials {
+    height: 80px;
+    width: 1248px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 48px;
+    padding: 28px 0;
+    border-top: 1px solid #e5e7eb;
+    color: #6a7282;
+    font-size: 13px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #6a7282;
+}
+
+.social-svgs {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #6a7282;
+}
+
+.social-svgs svg:hover {
+    color: #4f39f6;
+    transition: 0.3s;
 }
