@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Material</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/assets/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Banner -->
-    <div class="banner">
+    <div class="banner" id="home">
         <p>Build Faster with Responsive Tailwind CSS Templates</p>
         <a href="#">
             Explore now
@@ -35,7 +33,7 @@
         </div>
 
         <ul class="nav_links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li class="dropdown">
                 <a href="#">
                     Products
@@ -96,13 +94,52 @@
                 </div>
             </li>
 
-            <li><a href="#">Stories</a></li>
+            <li><a href="#stories">Stories</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Docs</a></li>
         </ul>
+
+        <ul class="sidebar">
+            <li><a href="#">home</a></li>
+            <li>
+                <a href="#" id="products">
+                    Prodcuts
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-chevron-down mt-px size-4 transition-transform duration-200"
+                        aria-hidden="true">
+                        <path d="m6 9 6 6 6-6"></path>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="#">Stories</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Docs</a></li>
+            <li>
+                <button class="signup-btn">Sign up</button>
+            <li>
+                <button id="cancelBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-x" aria-hidden="true">
+                        <path d="M18 6 6 18"></path>
+                        <path d="m6 6 12 12"></path>
+                    </svg>
+                </button>
+            </li>
+            </li>
+        </ul>
+
         <a class="sign-up" href="#">
             Sign Up
         </a>
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-menu size-6.5 menu-icon" id="menuBtn" aria-hidden="true">
+            <path d="M4 5h16"></path>
+            <path d="M4 12h16"></path>
+            <path d="M4 19h16"></path>
+        </svg>
     </nav>
 
     <!-- Hero Section -->
@@ -327,7 +364,7 @@
         </section>
 
         <!-- OUR TESTIMONIALS -->
-        <section class="Testimonial-Section">
+        <section class="Testimonial-Section" id="stories">
             <div class="testi-heading">
                 <h3 class="testi-head">Our Testimonials</h3>
                 <p class="testi-subtitle">
@@ -748,8 +785,10 @@
                         <path d="M5 12h14"></path>
                     </svg>
                 </div>
-                <p class="answer">Basic coding knowledge (HTML/CSS, Tailwind) helps, but advanced design skills aren't
-                    required. You can use components as-is or customize them.</p>
+                <p class="answer">
+                    Basic coding knowledge (HTML/CSS, Tailwind) helps, but advanced design skills aren't
+                    required. You can use components as-is or customize them.
+                </p>
 
                 <!-- Q2 -->
                 <div class="question">
