@@ -16,25 +16,35 @@ copyBtn.addEventListener("click", () => {
 
 // FAQ Section
 const questions = document.querySelectorAll(".question");
-
-questions.forEach(function(question) {
-  question.addEventListener("click", function() {
+questions.forEach(function (question) {
+  question.addEventListener("click", function () {
     const answer = question.nextElementSibling;
     const isOpen = answer.classList.contains("open");
 
-    // Close all
-    document.querySelectorAll(".answer").forEach(function(ans) {
+    document.querySelectorAll(".answer").forEach(function (ans) {
       ans.classList.remove("open");
     });
-    document.querySelectorAll(".question").forEach(function(q) {
+
+    document.querySelectorAll(".question").forEach(function (q) {
       q.classList.remove("open");
     });
 
-    // Open clicked one if it was closed
     if (!isOpen) {
       answer.classList.add("open");
       question.classList.add("open");
     }
   });
 });
- 
+
+// MOBILE MENU SIDEBAR
+const menuBtn = document.getElementById("menuBtn");
+const cancelBtn = document.getElementById("cancelBtn");
+const sidebar = document.querySelector(".sidebar");
+
+menuBtn.addEventListener("click", () => {
+  sidebar.classList.add("active");
+});
+
+cancelBtn.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+});
